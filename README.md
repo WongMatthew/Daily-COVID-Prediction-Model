@@ -42,3 +42,6 @@ The challenge requests that I make a function that takes in two parameters, data
 
 # How does it work? TLDR
 I use fbprophet to make a prediction based on the previous 300 days of infection and vaccination data for 3 different csv files for varying population sizes. At the end there's a function that saves a dataframe containing the predicted case count and returns the mean-squared-error and the predicted case count. 
+
+# Whats next?
+Going to add a base case to showcase the differences in MSE between checking and modifying the algorithm for seasonality and not
