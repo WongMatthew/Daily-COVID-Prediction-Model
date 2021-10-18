@@ -6,7 +6,16 @@ HackTheValley x Distributed Compute Labs Challenge
 You can find the full challenge details [here](https://docs.google.com/document/d/1xnxjDXiLMwMNr8MpUSDpuIi99Eq1Fh0tETSozf-KROY/edit?usp=sharing)
 
 # How to use it?
-Users can use the function built in the prediction model. Users need to download their own COVID count database and input the file location with the number of days they want predicted. Function will return a csv file, prediction.csv, and the mean-squared-eror.
+Users can use the function built in the prediction model. 
+```
+model_prediction(data_csv, number_of_days)
+```
+
+**data_csv**: location of a csv file
+
+**number_of_days**: number of days desired to be predicted
+
+Users need to download their own COVID count database and input the file location with the number of days they want predicted. Function will return a csv file, prediction.csv, and the mean-squared-eror.
 
 # How does it work? FULL BREAK DOWN
 I'm provided with 3 csv files which can be downloaded from the challenge document or can be found in the repo [here](https://github.com/WongMatthew/Daily-COVID-Prediction-Model/tree/main/DCP%20Data). The csv files contain the following columns: infected_unvaccinated, infected_vaccinated and total_vaccinated. I manually added total_pop because it is given in the full challenge details. It is important to note that each csv file corresponds to a different population size. I begin with feature engineering and data exploration. I created multiple new features - daily infected, total infected and date. I graphed the new features to see how they all corresponded to each other. 
